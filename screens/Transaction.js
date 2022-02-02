@@ -197,6 +197,8 @@ export default class TransactionScreen extends Component {
       );
     }
     return (
+        <KeyboardAvoidingView behavior="padding" style={styles.container}>
+
         <ImageBackground source={bgImage} style={styles.bgImage}>
           <View style={styles.upperContainer}>
             <Image source={appIcon} style={styles.appIcon} />
@@ -241,7 +243,8 @@ export default class TransactionScreen extends Component {
             </TouchableOpacity>
           </View>
         </ImageBackground>
-     
+           </KeyboardAvoidingView>
+
     );
   }
 }
