@@ -24,7 +24,7 @@ export default class BottomTabNavigator extends Component {
                 iconName = "search";
               }
 
-              // You can return any component that you like here!
+              // Puedes devolver cualquier componente aquí
               return (
                 <Ionicons
                   name={iconName}
@@ -50,8 +50,8 @@ export default class BottomTabNavigator extends Component {
            
           }}
         >
-          <Tab.Screen name="Transaction" component={TransactionScreen} />
-          <Tab.Screen name="Search" component={SearchScreen} />
+          <Tab.Screen name="Transacción" component={TransactionScreen} />
+          <Tab.Screen name="Buscar" component={SearchScreen} />
         </Tab.Navigator>
       </NavigationContainer>
     );
