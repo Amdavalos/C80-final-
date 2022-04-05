@@ -80,7 +80,7 @@ export default class TransactionScreen extends Component {
           this.initiateBookIssue(bookId, studentId, bookName, studentName);
 
           // Solo para usuario Android
-         //  ToastAndroid.show("Libro enviado al alumno", ToastAndroid.SHORT);
+         //  ToastAndroid.show("Libro emitido al alumno", ToastAndroid.SHORT);
 
 
            Alert.alert("Book issued to the student!");
@@ -143,7 +143,7 @@ export default class TransactionScreen extends Component {
       .update({
         is_book_available: false
       });
-    //cambia el número de libros enviados al alumno
+    //cambia el número de libros emitidos al alumno
     db.collection("students")
       .doc(studentId)
       .update({
@@ -173,7 +173,7 @@ export default class TransactionScreen extends Component {
       .update({
         is_book_available: true
       });
-    //cambia el número de libros enviados al alumno
+    //cambia el número de libros emitidos al alumno
     db.collection("students")
       .doc(studentId)
       .update({
